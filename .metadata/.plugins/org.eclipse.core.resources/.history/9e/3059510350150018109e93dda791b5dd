@@ -1,0 +1,53 @@
+package Scripts;
+
+import java.util.Scanner;
+
+public class UpperTrinagle {
+public static void main(String[] args) {
+	
+
+	 int m, n, i, j;
+     int a[][]=new int[10][10];
+     Scanner sc=new Scanner (System. in);
+     System.out.println("Enter the order of a square matrix :");
+     m=sc.nextInt();
+     n=sc.nextInt();
+     /* checking order of matrix and then if true then enter the values
+      * into the matrix a[][]
+     */
+     if(m == n)
+     {
+         System.out.println("Enter elements in the matrix:"+m*n);
+         for(i=0; i<m; i++)
+         {
+             for(j=0; j<n; j++)
+             a[i][j]=sc.nextInt();
+         }
+     }
+    // Display the entered value
+     System.out.println ("You have entered the following matrix");
+    for (i=0; i<m; i++)
+    {
+        for (j=0; j<n; j++)
+        System.out.print (a[i][j] + " ");
+        System.out.println ();
+     }
+     // Display the Upper Triangular Matrix
+     System.out.println("Upper triangular matrix  the given matrix is:");
+     for(i=0; i<m; i++)
+     {
+         for(j=0; j<n; j++)
+         {
+             if(i>j)
+             a[i][j] = 0;
+             System.out.print(a[i][j] + " ");
+         }
+         System.out.println();
+     }
+ }       
+
+
+	}
+
+
+

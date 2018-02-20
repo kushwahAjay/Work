@@ -1,0 +1,12 @@
+package Scripts;
+
+public class ArraysPrint {
+	
+	public static void main(String[] args) {
+		 int a1[]={11,44,66,33};
+		 
+		 System.out.println(a1);
+		
+	}
+
+}

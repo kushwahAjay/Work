@@ -1,0 +1,13 @@
+package Scripts;
+
+public class UpperTrinagle {
+
+	public static void main(String[] args) {
+		int m=0;
+		int n=0;
+		int[][] arr={{1,4,6},{3,8,9},{2,7,1}};
+		System.out.println(arr[m][n]);
+
+	}
+
+}
